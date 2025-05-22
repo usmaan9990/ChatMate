@@ -21,10 +21,16 @@
 ## ⚙️ Project Setup (Key Notes)
 
 > 📝 **Model Setup**:  
-Create a `models/orca_mini` directory and download the model using: "wget https://huggingface.co/zoltanctoth/orca_mini_3B-GGUF/resolve/main/orca-mini-3b.q4_0.gguf"
+Create a `Model/orca_mini` directory and download the model using: "wget https://huggingface.co/zoltanctoth/orca_mini_3B-GGUF/resolve/main/orca-mini-3b.q4_0.gguf"
+
+> > 📦 **Why the model isn't included**:  
+Due to GitHub's 2GB file upload limit, the Orca Mini 3B model is **not uploaded to this repository**.  
+To set it up properly:
+1. Create a directory structure: `models/orca_mini/`
+2. Inside `orca_mini`, run the above `wget` command to download the model file.
 
 > 🧠 **Model Loading**:  
-Used **CTransformers** to load the model due to its lighter weight compared to `llama-cpp`.
+Used **CTransformers** to load the model due to its lighter weight compared to `llama-cpp`. But to `FinTer.py` used `llama-cpp`.
 
 > 🌐 **App Backend**:  
 Implemented using **Flask** to serve the chatbot interface.
@@ -57,7 +63,14 @@ This project is created for educational purposes. Please refer to the license te
 
 ---
 
+
 ## 📌 Note
 
-This is a learning project intended to demonstrate how to integrate small LLMs in real-world scenarios using limited resources. While **ChatMate** is a basic chatbot, it sets the groundwork for future enhancements including memory support, rich UI, and deployment to mobile/web platforms.
+Due to GitHub’s file upload size limitations, the **Orca Mini 3B model is not included** in this repository.
+
+To run the project:
+1. Manually create a `Model/orca_mini/` directory.
+2. Inside that folder, run the following command:
+   ```bash
+   wget https://huggingface.co/zoltanctoth/orca_mini_3B-GGUF/resolve/main/orca-mini-3b.q4_0.gguf
 
