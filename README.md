@@ -2,6 +2,10 @@
 
 **ChatMate** is a lightweight pocket chatbot designed to run efficiently even without high-end hardware. Built using the **Orca Mini 3B** model, this project showcases how small LLMs can be deployed effectively for interactive chat applications. It is fully executable inside **GitHub Codespaces**, making it accessible and portable.
 
+
+![image](https://github.com/user-attachments/assets/5c9deb94-56d0-4666-a53b-27486aec770c)
+
+
 ---
 
 ## 💡 Key Features
